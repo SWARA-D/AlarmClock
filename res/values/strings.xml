@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AlarmClock</string>
+
+    <string-array name="destinations">
+        <item>Shopping</item>
+        <item>School</item>
+        <item>Work</item>
+        <item>Exercise</item>
+    </string-array>
+</resources>
