@@ -1,24 +1,10 @@
 package com.practice.alarmclock
 
-import android.app.AlarmManager
-import android.app.NotificationChannel
-import android.app.NotificationManager
-import android.app.PendingIntent
 import android.content.Intent
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
-import com.google.android.material.timepicker.MaterialTimePicker
-import com.google.android.material.timepicker.TimeFormat
-import com.practice.alarmclock.databinding.ActivityMainBinding
-import java.util.*
-import android.widget.AdapterView
-import android.widget.AdapterView.OnItemClickListener
-
 import android.widget.AutoCompleteTextView
-import com.google.android.material.textfield.TextInputLayout
-import org.w3c.dom.Text
 
 
 class MainActivity : AppCompatActivity() {
@@ -44,16 +30,12 @@ class MainActivity : AppCompatActivity() {
             itemSelected = item
         }
 
-
             val setTimeBtn = findViewById<Button>(R.id.setTimeBtn)
         setTimeBtn.setOnClickListener()
         {
             val intent = Intent(this,SetTimeActivity::class.java)
             intent.putExtra("item", itemSelected)
             startActivity(intent)
-
         }
-
     }
-
 }
