@@ -4,21 +4,10 @@ import android.app.*
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
 import android.widget.TimePicker
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.NotificationCompat
-import androidx.core.content.ContextCompat
-import com.practice.alarmclock.databinding.ActivityMainBinding
-import com.practice.alarmclock.databinding.SetTimeActivityBinding
 import java.util.*
-import com.google.android.material.datepicker.MaterialDatePicker.Builder.datePicker
-
-
 
 
 class SetTimeActivity : AppCompatActivity() {
@@ -69,8 +58,6 @@ class SetTimeActivity : AppCompatActivity() {
                 scheduleNotification(this,calendar.timeInMillis,"Alarm","Don't Forget")
 
             }
-
-
     }
     fun scheduleNotification(context: Context, time: Long, title: String, text: String) {
         val alarmintent = Intent(context, AlarmReceiver::class.java)
