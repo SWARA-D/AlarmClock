@@ -1,10 +1,7 @@
 package com.practice.alarmclock
 
-import com.practice.alarmclock.MainActivity.Companion.itemSelected
 import android.os.Bundle
-import android.widget.AutoCompleteTextView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
